@@ -34,13 +34,13 @@ void shake_sort(int array[]) {
 }
 
 
-int main() {
-    int array[MAX] = {1, 17, 2, 90, 15, -2, 0, 9, 21, 12};
-    ft_print(array);
-    shake_sort(array);
-
-    ft_print(array);
-
-
-    return 0;
-}
+//int main() {
+//    int array[MAX] = {1, 17, 2, 90, 15, -2, 0, 9, 21, 12};
+//    ft_print(array);
+//    shake_sort(array);
+//
+//    ft_print(array);
+//
+//
+//    return 0;
+//}

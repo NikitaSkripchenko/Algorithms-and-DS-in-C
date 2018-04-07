@@ -3,14 +3,14 @@
 
 struct Array {
     int *data;
-    int last;// size;
+    int last;
     unsigned capacity;
 };
 
 struct Array *createArray(unsigned capacity) {
     struct Array *array = (struct Array *) malloc(sizeof(struct Array));
     array->capacity = capacity;
-    array->last = 0; //array->size = 0;
+    array->last = 0;
     array->data = (int *) malloc(array->capacity * sizeof(int));
     return array;
 }
@@ -37,7 +37,6 @@ int Delete(struct Array *array, int index) {
             }
             array->data[array->last] = 0;
             array->last = array->last - 1;
-            //array->size--;
             printf("%d deleted from list ", temp);
             return temp;
         }
@@ -53,13 +52,3 @@ void Print(struct Array *array) {
     }
 }
 
-int main() {
-    struct Array *array = createArray(10);
-    Push(array, 12);
-    Push(array, 13);
-    Push(array, 14);
-
-    Print(array);
-    Delete(array, 1);
-    return 0;
-}

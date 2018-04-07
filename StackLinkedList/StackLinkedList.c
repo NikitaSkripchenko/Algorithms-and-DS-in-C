@@ -54,11 +54,3 @@ int length() {
     return length;
 }
 
-int main() {
-    push(30);
-
-    pop();
-    pop();
-    show();
-
-}

@@ -53,17 +53,3 @@ void show() {
     }
     free(cur_point);
 }
-
-int main() {
-    push(30);
-    push(40);
-    push(60);
-
-    show();
-    pop();
-    show();
-    pop();
-    show();
-    pop();
-    show();
-}

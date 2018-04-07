@@ -35,10 +35,10 @@ void ft_print(int array[]) {
     printf("\n");
 }
 
-int main() {
-    int array[MAX] = {10, -2, 4, 100, 20, 12, 21, 8, 9, 11};
-    ft_print(array);
-    gnome_sort(array);
-    ft_print(array);
-    return 0;
-}
+//int main() {
+//    int array[MAX] = {10, -2, 4, 100, 20, 12, 21, 8, 9, 11};
+//    ft_print(array);
+//    gnome_sort(array);
+//    ft_print(array);
+//    return 0;
+//}
