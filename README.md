@@ -11,6 +11,7 @@ There is a list of finished implementations. I keep working on new ones.
 - Stack (Vector)
 - Queue (Linked)
 - Queue (Vector)
+- Binary Tree
 
 ### Sorting
 - Bubble Sort
