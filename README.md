@@ -23,6 +23,7 @@ There is a list of finished implementations. I keep working on new ones.
 — Shell Sort
 — Heap Sort
 — Quick Sort
+— 
 
 ### Searching
 - Linear Search
