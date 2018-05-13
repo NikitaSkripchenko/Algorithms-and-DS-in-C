@@ -18,6 +18,11 @@ There is a list of finished implementations. I keep working on new ones.
 - Insertion Sort
 - Gnome Sort
 - Shake Sort
+— Count Sort
+— Selection Sort
+— Shell Sort
+— Heap Sort
+— Quick Sort
 
 ### Searching
 - Linear Search
