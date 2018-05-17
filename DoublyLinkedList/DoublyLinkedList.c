@@ -30,11 +30,13 @@ void add_first(int key, int data) {
 }
 
 void add_last(int key, int data) {
+
     struct node *cell = (struct node *) malloc(sizeof(struct node));
     cell->key = key;
     cell->data = data;
     if (is_empty()) {
         tail = cell;
+        head = cell;
     } else {
         tail->next = cell;//cell->next = tail
         cell->previous = tail;
@@ -60,15 +62,20 @@ struct node *delete_first() {
 
 struct node *delete_last() {
     struct node *temp = tail;
+
     if (is_empty()) {
         return NULL;
     }
+    else if (head->next == NULL) {
+        tail = NULL;
+    }
+
     if (tail->previous == NULL) {
         head = NULL;
     } else {
         tail->previous->next = NULL;
     }
-    tail = tail->previous;
+    //tail = tail->previous;
     return temp;
 }
 
@@ -147,4 +154,14 @@ void show() {
         ptr = ptr->next;
     }
     printf(" ]");
+}
+
+int main(){
+    add_first(1,1);
+    add_last(2,2);
+
+    delete_last();
+    delete_first();
+
+    show();
 }
