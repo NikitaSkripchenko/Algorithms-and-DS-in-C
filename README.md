@@ -24,11 +24,17 @@ There is a list of finished implementations. I keep working on new ones.
 - Heap Sort
 - Quick Sort
 - Merge Sort
+- Radix Sort (Count)
 
 ### Searching
 - Linear Search
 - Binary Search
 - Jump Search
+
+### Searching substring
+- Linear Search in String
+- KMP Search
+- Boyer-Moore Search
 
 ## Contribute
 I would be happy if you are leave a comment, issues, ways to improvement
