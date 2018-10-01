@@ -15,7 +15,7 @@ struct Array *createArray(unsigned capacity) {
     return array;
 }
 
-int is_full(struct Array *array) { return ((array->last + 1) == array->capacity); }
+int is_full(struct Array *array) { return (((array->last) + 1) == array->capacity); }
 
 int is_empty(struct Array *array) { return (array->last < 0); }
 
