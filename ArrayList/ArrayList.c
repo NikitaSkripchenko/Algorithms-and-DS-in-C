@@ -10,12 +10,12 @@ struct Array {
 struct Array *createArray(unsigned capacity) {
     struct Array *array = (struct Array *) malloc(sizeof(struct Array));
     array->capacity = capacity;
-    array->last = 0;
+    array->last = -1;
     array->data = (int *) malloc(array->capacity * sizeof(int));
     return array;
 }
 
-int is_full(struct Array *array) { return (array->last == array->capacity); }
+int is_full(struct Array *array) { return ((array->last + 1) == array->capacity); }
 
 int is_empty(struct Array *array) { return (array->last < 0); }
 
@@ -47,8 +47,7 @@ int Delete(struct Array *array, int index) {
 }
 
 void Print(struct Array *array) {
-    for (int i = 1; i <= array->last; i++) {
+    for (int i = 0; i <= array->last; i++) {
         printf("%d\t", array->data[i]);
     }
 }
-
