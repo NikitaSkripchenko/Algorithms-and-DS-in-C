@@ -1,7 +1,7 @@
 # Algorithms and DS
 Clean implementation in C
 ## Implementation
-There is a list of finished implementations. I keep working on new ones.
+There is a list of finished implementations.
 
 ### Data Structures
 - Linked List (Vector)
@@ -37,4 +37,4 @@ There is a list of finished implementations. I keep working on new ones.
 - Boyer-Moore Search
 
 ## Contribute
-I would be happy if you are leave a comment, issues, ways to improvement
+I would be happy if you will leave a comment, issue, ways of improvement.
